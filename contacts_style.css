@@ -55,6 +55,9 @@ h1{
     padding-left: 20px;
 }
 
-.fa-github{
-
+.contact a{
+    display: flex;
+    flex-direction: row;
+    text-decoration-line: none;
+    color: hsl(0, 100%, 30%);
 }
