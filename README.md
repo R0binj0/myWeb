@@ -4,6 +4,7 @@
 
 Css:
   Hsl värve
+  
 Javascripti:
   Javascripti kasutamist
   Javascripti stringe metoteid
@@ -12,6 +13,7 @@ Javascripti:
   Javascript randome
   Javascript class/constructor
   Javascript createElement
+  
 Html:
   Html icone
 
