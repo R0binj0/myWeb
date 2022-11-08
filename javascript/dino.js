@@ -12,31 +12,19 @@ function jump() {
     }
 }
 
-button.onclick = function () {
-
-	if(game.className == "open"){
-		game.className = "";
-		button.innerHTML = "START";
-	} else {
-		game.className = "open";
-		button.innerHTML = "END";
-	}
-
-};
-/*let checkAlive = setInterval(function () {
+let checkAlive = setInterval(function () {
     let dinoTop = parseInt(
         window.getComputedStyle(dino).getPropertyValue("top")
     );
     let blockLeft = parseInt(
         window.getComputedStyle(block).getPropertyValue("left")
     );
-    if (blockLeft > 0 && blockLeft < 70 && dinoTop >= 143) {
-        dino.style.animationPlayState = "paused";
-        block.style.animationPlayState = "paused";
-        alert("Whoops! Game Over :(");
+    if (blockLeft > 0 && blockLeft < 50 && dinoTop >= 150) {
+        block.style
+        alert("Game Over :(");
         window.location.reload();
     }
-}, 10);*/
+}, 10);
 document.addEventListener("keydown", function (event) {
     jump();
 });

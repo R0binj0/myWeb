@@ -82,11 +82,11 @@ header h1{
     position: relative;
     left:760px;
     top:110px;
-    animation: block 1s infinite;
+    animation: block 2s infinite;
 }
 @keyframes block {
     0%{left: 760px;}
-    100%{left: -80px;}
+    100%{left: -200px;}
 }
 .jump {
     animation: jump 0.3s linear;
