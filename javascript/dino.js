@@ -2,6 +2,17 @@ const dino = document.getElementById("dino");
 const block = document.getElementById("block");
 const game = document.getElementById("game");
 const button = document.getElementById("show-more");
+const rwindow = document.getElementById("window");
+const restart = document.getElementsByClassName("close")[0];
+var cancel = setInterval(scoreCount, 1000);
+var score = document.getElementById('score');
+var scorebegin = 0;
+var pause = false
+
+restart.onclick = function() {
+  rwindow.style.display = "none";
+  window.location.reload();
+}
 
 function jump() {
     if (dispatchEvent.classList != "jump") {
@@ -9,6 +20,13 @@ function jump() {
         setTimeout(function () {
             dino.classList.remove("jump");
         }, 300);
+    }
+}
+
+function scoreCount() {
+    if (!pause){
+        scorebegin += 1;
+        score.innerHTML = scorebegin;
     }
 }
 
@@ -20,11 +38,12 @@ let checkAlive = setInterval(function () {
         window.getComputedStyle(block).getPropertyValue("left")
     );
     if (blockLeft > 0 && blockLeft < 50 && dinoTop >= 150) {
-        block.style
-        alert("Game Over :(");
-        window.location.reload();
+        dino.style.animationPlayState = "paused";
+        block.style.animationPlayState = "paused";
+        rwindow.style.display = "block";
+        pause = true;
     }
-}, 10);
-document.addEventListener("keydown", function (event) {
+});
+document.addEventListener("keyup", function (event) {
     jump();
 });

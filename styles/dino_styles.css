@@ -86,7 +86,7 @@ header h1{
 }
 @keyframes block {
     0%{left: 760px;}
-    100%{left: -200px;}
+    100%{left: -160px;}
 }
 .jump {
     animation: jump 0.3s linear;
@@ -97,3 +97,30 @@ header h1{
     66%{top: 80px;}
     100%{top: 150px;}
 }
+#window {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    width: 30%;
+    height: 15%; 
+    background-color: black;
+    border: 1px solid hsl(0, 100%, 30%);
+}
+.restart {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+.close {
+    margin-top: 30px;
+    padding:10px;
+    cursor: pointer;
+    border: 1px solid hsl(0, 100%, 30%);
+    color: hsl(0, 100%, 30%);
+}
+
+#score{
+    color: hsl(0, 100%, 30%);
+}
+  
