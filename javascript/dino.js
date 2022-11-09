@@ -37,7 +37,7 @@ let checkAlive = setInterval(function () {
     let blockLeft = parseInt(
         window.getComputedStyle(block).getPropertyValue("left")
     );
-    if (blockLeft > 0 && blockLeft < 50 && dinoTop >= 150) {
+    if (blockLeft > 0 && blockLeft < 80 && dinoTop >= 130) {
         dino.style.animationPlayState = "paused";
         block.style.animationPlayState = "paused";
         rwindow.style.display = "block";

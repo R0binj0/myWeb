@@ -69,10 +69,10 @@ header h1{
 }
 #dino{
     width: 40px;
-    height: 100px;
+    height: 80px;
     background-color:hsl(0, 100%, 30%);
     position: relative;
-    top: 150px;
+    top: 170px;
     left: 50px;
 }
 #block{
@@ -81,7 +81,7 @@ header h1{
     background-color:hsl(0, 100%, 30%);
     position: relative;
     left:760px;
-    top:110px;
+    top:130px;
     animation: block 2s infinite;
 }
 @keyframes block {
@@ -92,10 +92,10 @@ header h1{
     animation: jump 0.3s linear;
 }
 @keyframes jump {
-    0%{top: 150px;}
-    33%{top: 80px;}
-    66%{top: 80px;}
-    100%{top: 150px;}
+    0%{top: 130px;}
+    33%{top: 100px;}
+    66%{top: 100px;}
+    100%{top: 130px;}
 }
 #window {
     display: none;
