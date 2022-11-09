@@ -44,6 +44,6 @@ let checkAlive = setInterval(function () {
         pause = true;
     }
 });
-document.addEventListener("keyup", function (event) {
+document.addEventListener("keydown", function (event) {
     jump();
 });
