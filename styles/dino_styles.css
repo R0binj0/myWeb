@@ -101,10 +101,9 @@ header h1{
     display: none;
     position: fixed;
     z-index: 1;
-    width: 30%;
-    height: 15%; 
     background-color: black;
     border: 1px solid hsl(0, 100%, 30%);
+    padding: 10px 20px;
 }
 .restart {
     overflow: hidden;
@@ -113,13 +112,11 @@ header h1{
     flex-direction: column-reverse;
 }
 .close {
-    margin-top: 30px;
     padding:10px;
     cursor: pointer;
     border: 1px solid hsl(0, 100%, 30%);
     color: hsl(0, 100%, 30%);
 }
-
 #score{
     color: hsl(0, 100%, 30%);
 }
