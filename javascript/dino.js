@@ -1,7 +1,6 @@
 const dino = document.getElementById("dino");
 const block = document.getElementById("block");
 const game = document.getElementById("game");
-const button = document.getElementById("show-more");
 const rwindow = document.getElementById("window");
 const restart = document.getElementsByClassName("close")[0];
 var cancel = setInterval(scoreCount, 1000);

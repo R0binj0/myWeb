@@ -6,7 +6,7 @@ function pick() {
 }
 function numbers() {
   return String.fromCharCode(pick(
-    r(0x0030, 0x0031)
+    r(0x30, 0x31)
   ));
 }
 class char {
