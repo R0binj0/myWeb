@@ -61,15 +61,6 @@ header h1{
     align-items: center;
     padding:30px;
 }
-.game{
-    width: 500px;
-    height: 350px;
-    border: 1px solid hsl(0, 100%, 30%);
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 #window {
     display: none;
     position: fixed;
@@ -94,16 +85,16 @@ header h1{
     top:0px;
     right:20px;
 }
-@keyframes moveUp {
-    0%{top:0px;}
-    100%{top:-30px}
+canvas {
+    border: 1px solid hsl(0, 100%, 30%);
+    background-color: black;
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-@keyframes moveDown {
-    0%{top:0px;}
-    100%{top:30px}
-}
-
 .ball{
     background-color: hsl(0, 100%, 30%);
     width: 20px;
