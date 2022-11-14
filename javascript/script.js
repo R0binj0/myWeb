@@ -76,14 +76,10 @@ class rain {
     loop(() => {
       trail.move();
       trail.traverse((c, i, last) => {
-        c.element.style = `
-          color: hsl(0, 100%, ${85 / len * (i + 1)}%)
-        `;
+        c.element.style = `color: hsl(0, 100%, ${85 / len * (i + 1)}%)`;
         if (last) {
           c.mutate();
-          c.element.style = `
-            color: hsl(0, 100%, 85%);
-          `;
+          c.element.style = `color: hsl(0, 100%, 85%);`;
         }
       });
     }, delay);
