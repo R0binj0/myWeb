@@ -94,6 +94,7 @@ header h1{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    overflow: hidden;
 }
 .ball{
     background-color: hsl(0, 100%, 30%);
