@@ -96,9 +96,10 @@ header h1{
     justify-content: space-between;
     overflow: hidden;
 }
-.ball{
+#ball{
     background-color: hsl(0, 100%, 30%);
     width: 20px;
     height: 20px;
     border-radius: 50%;
+    position: absolute;
 }
