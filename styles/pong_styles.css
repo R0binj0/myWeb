@@ -61,31 +61,7 @@ header h1{
     align-items: center;
     padding:30px;
 }
-#window {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    background-color: black;
-    border: 1px solid hsl(0, 100%, 30%);
-    padding: 10px 20px;
-}
-#player1{
-    height: 100px;
-    width: 20px;
-    background-color:hsl(0, 100%, 30%);
-    position: relative;
-    top:0px;
-    left:20px;
-}
-#player2{
-    height: 100px;
-    width: 20px;
-    background-color: hsl(0, 100%, 30%);
-    position: relative;
-    top:0px;
-    right:20px;
-}
-#game {
+.board {
     border: 1px solid hsl(0, 100%, 30%);
     background-color: black;
     width: 500px;
@@ -95,10 +71,30 @@ header h1{
     align-items: center;
     justify-content: space-between;
     overflow: hidden;
-}
-#ball{
-    background-color: hsl(0, 100%, 30%);
-    width: 20px;
+} 
+.ball {
     height: 20px;
+    width: 20px;
     border-radius: 50%;
+    position: fixed;
+    top: calc(50% - 15px);
+    left: calc(50% - 15px);
+    background-color: hsl(0, 100%, 30%);
+}
+.paddle {
+    height: 100px;
+    width: 18px;
+    position: fixed;
+}  
+.paddle_1 {
+    position: relative;
+    top:0px;
+    left:20px;
+    background-color: hsl(0, 100%, 30%);
+}  
+.paddle_2 {
+    position: relative;
+    top:0px;
+    right:20px;
+    background-color: hsl(0, 100%, 30%);
 }
