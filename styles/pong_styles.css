@@ -70,21 +70,19 @@ header h1{
     align-items: center;
     justify-content: space-between;
 }
-#player1{
-    height: 100px;
-    width: 20px;
-    background-color:hsl(0, 100%, 30%);
-    position: relative;
-    top: calc(15 + 50px);
-    left: calc(0px + 20px);
-}
-#player2{
+.player{
     height: 100px;
     width: 20px;
     background-color: hsl(0, 100%, 30%);
     position: relative;
-    top: calc(15 - 50px);
-    right: calc(0px + 20px);
+}
+#player1{
+    top: calc(0vh + 55px);
+    left: calc(0vw + 30px);
+}
+#player2{
+    top: calc(0vh + 55px);
+    right: calc(0vw + 30px);
 }
 #ball{
     background-color: hsl(0, 100%, 30%);
@@ -92,6 +90,6 @@ header h1{
     height: 20px;
     border-radius: 50%;
     position: fixed;
-    top: calc(50% - 15px);
-    left: calc(50% - 15px);
+    top: calc(50% - 0px);
+    left: calc(50% - 0px);
 }

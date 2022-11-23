@@ -4,8 +4,8 @@ let game = document.getElementById("game");
 let ball = document.getElementById("ball");
 let initial_ball = document.getElementById("ball");
 let gameState = 'start';
-let paddle_1_coord = player1.getBoundingClientRect();
-let paddle_2_coord = player2.getBoundingClientRect();
+let player_1_coord = player1.getBoundingClientRect();
+let player_2_coord = player2.getBoundingClientRect();
 let board_coord = game.getBoundingClientRect();
 let initial_ball_coord = ball.getBoundingClientRect();
 let ball_coord = initial_ball_coord;
@@ -35,21 +35,25 @@ document.addEventListener('keydown', (e) => {
       case 87:
           if (player1.style.top != "-150px"){
               player1.style.top = parseInt(player1.style.top) - 30 + "px"
+              player_1_coord = player1.getBoundingClientRect();
           }
           break;
       case 83:
           if (player1.style.top != "150px"){
               player1.style.top = parseInt(player1.style.top) + 30 + "px"
+              player_1_coord = player1.getBoundingClientRect();
           }
           break;
       case 38:
           if (player2.style.top != "-150px"){
               player2.style.top = parseInt(player2.style.top) - 30 + "px"
+              player_2_coord = player2.getBoundingClientRect();
           }
           break;
       case 40:
           if (player2.style.top != "150px"){
               player2.style.top = parseInt(player2.style.top) + 30 + "px"
+              player_2_coord = player2.getBoundingClientRect();
           }
           break;
    }
@@ -64,18 +68,18 @@ function moveBall(dx, dy, dxd, dyd) {
     dyd = 0;
   }
   if (
-    ball_coord.left <= paddle_1_coord.right &&
-    ball_coord.top >= paddle_1_coord.top &&
-    ball_coord.bottom <= paddle_1_coord.bottom
+    ball_coord.left <= player_1_coord.right &&
+    ball_coord.top >= player_1_coord.top &&
+    ball_coord.bottom <= player_1_coord.bottom
   ) {
     dxd = 1;
     dx = Math.floor(Math.random() * 4) + 3;
     dy = Math.floor(Math.random() * 4) + 3;
   }
   if (
-    ball_coord.right >= paddle_2_coord.left &&
-    ball_coord.top >= paddle_2_coord.top &&
-    ball_coord.bottom <= paddle_2_coord.bottom
+    ball_coord.right >= player_2_coord.left &&
+    ball_coord.top >= player_2_coord.top &&
+    ball_coord.bottom <= player_2_coord.bottom
   ) {
     dxd = 0;
     dx = Math.floor(Math.random() * 4) + 3;
