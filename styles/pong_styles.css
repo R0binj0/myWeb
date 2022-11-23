@@ -26,7 +26,7 @@ span {
     height: 70%;
     width:900px;
     background-color: black;
-    border: 2px solid hsl(0, 100%, 30%);
+    border: 2px solid ;
     color:hsl(0, 100%, 30%);
     border-radius: 20px;
     display: flex;
@@ -36,7 +36,7 @@ span {
 header{
     height: 60px;
     width: 900px;
-    border-bottom: 2px solid hsl(0, 100%, 30%);
+    border-bottom: 2px solid;
     background-color: black;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -64,7 +64,7 @@ header h1{
 #game{
     width: 500px;
     height: 350px;
-    border: 1px solid hsl(0, 100%, 30%);
+    border: 1px solid;
     overflow: hidden;
     display: flex;
     align-items: center;
