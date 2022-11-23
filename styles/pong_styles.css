@@ -81,7 +81,7 @@ header h1{
     left: calc(0vw + 30px);
 }
 #player2{
-    top: calc(0vh + 55px);
+    top: calc(0vh - 55px);
     right: calc(0vw + 30px);
 }
 #ball{
@@ -92,4 +92,19 @@ header h1{
     position: fixed;
     top: calc(50% - 0px);
     left: calc(50% - 0px);
+}
+.message{
+font-size: 20px;
+}
+.cocntent{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.ponggame{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
 }
