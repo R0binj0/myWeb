@@ -11,8 +11,8 @@ let player_2_coord = player2.getBoundingClientRect();
 let board_coord = game.getBoundingClientRect();
 let initial_ball_coord = ball.getBoundingClientRect();
 let ball_coord = initial_ball_coord;
-let dx = Math.floor(Math.random() * 4) + 3;
-let dy = Math.floor(Math.random() * 4) + 3;
+let dx = Math.floor(Math.random() * 4) + 9;
+let dy = Math.floor(Math.random() * 4) + 9;
 let dxd = Math.floor(Math.random() * 2);
 let dyd = Math.floor(Math.random() * 2);
 
@@ -24,8 +24,8 @@ document.addEventListener('keydown', (e) => {
     gameState = gameState == 'start' ? 'play' : 'start';
     if (gameState == 'play') {
       requestAnimationFrame(() => {
-        dx = Math.floor(Math.random() * 4) + 3;
-        dy = Math.floor(Math.random() * 4) + 3;
+        dx = Math.floor(Math.random() * 4) + 9;
+        dy = Math.floor(Math.random() * 4) + 9;
         dxd = Math.floor(Math.random() * 2);
         dyd = Math.floor(Math.random() * 2);
         moveBall(dx, dy, dxd, dyd);
@@ -75,8 +75,8 @@ function moveBall(dx, dy, dxd, dyd) {
     ball_coord.bottom <= player_1_coord.bottom
   ) {
     dxd = 1;
-    dx = Math.floor(Math.random() * 4) + 3;
-    dy = Math.floor(Math.random() * 4) + 3;
+    dx = Math.floor(Math.random() * 4) + 9;
+    dy = Math.floor(Math.random() * 4) + 9;
   }
   if (
     ball_coord.right >= player_2_coord.left &&
@@ -84,8 +84,8 @@ function moveBall(dx, dy, dxd, dyd) {
     ball_coord.bottom <= player_2_coord.bottom
   ) {
     dxd = 0;
-    dx = Math.floor(Math.random() * 4) + 3;
-    dy = Math.floor(Math.random() * 4) + 3;
+    dx = Math.floor(Math.random() * 4) + 9;
+    dy = Math.floor(Math.random() * 4) + 9;
   }
   if (
     ball_coord.left <= board_coord.left ||
